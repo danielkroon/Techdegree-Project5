@@ -368,14 +368,6 @@ textarea {
   font: inherit;
   /* 2 */ }
 
-body {
-  font-family: 'Open Sans', sans-serif;
-  color: #4A4A4A;
-  background-color: white; }
-
-.l-wrapper {
-  background-color: #EDEDED; }
-
 a {
   text-decoration: none;
   color: #4A4A4A; }
@@ -393,7 +385,7 @@ ul {
   margin: 0 auto;
   flex-direction: column;
   align-items: center; }
-  @media screen and (min-width: 1024px) {
+  @media (min-width: 1024px) {
     .main-header {
       flex-direction: row;
       justify-content: space-between;
@@ -408,34 +400,61 @@ ul {
     background-color: white;
     border-radius: 4px;
     text-align: center; }
-    @media screen and (min-width: 768px) {
+    @media (min-width: 768px) {
       .main-nav a {
         padding: 10px 50px 10px 50px; } }
   .main-nav li {
     align-self: center;
     width: 85%;
     margin: 10px; }
-  @media screen and (min-width: 768px) {
+  @media (min-width: 768px) {
     .main-nav {
       flex-direction: row; } }
 
 .name {
   align-self: center; }
-  @media screen and (min-width: 1024px) {
+  @media (min-width: 1024px) {
     .name {
       margin-right: auto; } }
 
+.nav-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 530px;
+  margin: 0 auto; }
+  .nav-footer li {
+    padding: 20px; }
+  @media (min-width: 768px) {
+    .nav-footer {
+      max-width: 768px; } }
+  @media (min-width: 1024px) {
+    .nav-footer {
+      max-width: 1024px; } }
+
+#footer-2, #footer-3, #footer-4 {
+  display: none; }
+
+@media (min-width: 768px) {
+  #footer-1 {
+    margin-right: auto; }
+
+  #footer-2, #footer-3, #footer-4 {
+    display: inherit; }
+
+  #footer-5 {
+    display: none; } }
 .about {
   max-width: 530px;
   display: flex;
   flex-direction: column;
   margin: 0 auto; }
-  @media screen and (min-width: 768px) {
+  @media (min-width: 768px) {
     .about {
       flex-direction: row-reverse;
       justify-content: center;
       max-width: 768px; } }
-  @media screen and (min-width: 1024px) {
+  @media (min-width: 1024px) {
     .about {
       justify-content: space-between;
       max-width: 1024px; } }
@@ -443,10 +462,10 @@ ul {
 .picture-wrapper {
   display: flex;
   justify-content: center; }
-  @media screen and (min-width: 768px) {
+  @media (min-width: 768px) {
     .picture-wrapper {
       justify-content: center; } }
-  @media screen and (min-width: 1024px) {
+  @media (min-width: 1024px) {
     .picture-wrapper {
       justify-content: space-between; } }
 
@@ -460,7 +479,7 @@ ul {
   color: #7F7F7F;
   text-align: center;
   font-size: 21px; }
-  @media screen and (min-width: 768px) {
+  @media (min-width: 768px) {
     .about-me {
       text-align: left;
       align-self: center; } }
@@ -474,7 +493,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center; }
-  @media screen and (min-width: 768px) {
+  @media (min-width: 768px) {
     section {
       flex-direction: row;
       flex-flow: wrap;
@@ -500,10 +519,10 @@ section {
   text-align: center;
   margin: 0 auto;
   max-width: 530px; }
-  @media screen and (min-width: 768px) {
+  @media (min-width: 768px) {
     .contact {
       max-width: 768px; } }
-  @media screen and (min-width: 1024px) {
+  @media (min-width: 1024px) {
     .contact {
       max-width: 1024px; } }
 
@@ -518,32 +537,12 @@ section {
   border-radius: 3px;
   align-self: center; }
 
-.nav-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  max-width: 530px;
-  margin: 0 auto; }
-  .nav-footer li {
-    padding: 20px; }
-  @media screen and (min-width: 768px) {
-    .nav-footer {
-      max-width: 768px; } }
-  @media screen and (min-width: 1024px) {
-    .nav-footer {
-      max-width: 1024px; } }
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #4A4A4A;
+  background-color: white; }
 
-#footer-2, #footer-3, #footer-4 {
-  display: none; }
-
-@media screen and (min-width: 768px) {
-  #footer-1 {
-    margin-right: auto; }
-
-  #footer-2, #footer-3, #footer-4 {
-    display: inherit; }
-
-  #footer-5 {
-    display: none; } }
+.l-wrapper {
+  background-color: #EDEDED; }
 
 /*# sourceMappingURL=styles.css.map */

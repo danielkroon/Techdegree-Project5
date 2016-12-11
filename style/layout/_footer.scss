@@ -9,11 +9,11 @@
         padding: 20px;
       }
       
-      @media screen and (min-width: 768px) {
+      @media #{$brk-narrow} {
         max-width: 768px;
       }  
       
-      @media screen and (min-width: 1024px) {
+      @media #{$brk-wide} {
         max-width: 1024px;
       }
     }
@@ -22,7 +22,7 @@
       display: none;
     }
     
-    @media screen and (min-width: 768px) {  
+    @media #{$brk-narrow} {  
     #footer-1 {
       margin-right: auto;
     }

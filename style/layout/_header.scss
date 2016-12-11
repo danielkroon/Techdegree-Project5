@@ -1,10 +1,10 @@
 a {
-    text-decoration: none;
-    color: $text-color;
-    
-    &:hover {
-        color: $hover-color;
-    }
+  text-decoration: none;
+  color: $text-color;
+  
+  &:hover {
+    color: $hover-color;
+  }
 }
 
 ul {
@@ -20,7 +20,7 @@ ul {
     flex-direction: column;
     align-items: center;
     
-    @media screen and (min-width: 1024px) {
+    @media #{$brk-wide} {
       flex-direction: row;
       justify-content: space-between;
       width: 100%;
@@ -39,7 +39,7 @@ ul {
     text-align: center;
     
     
-    @media screen and (min-width: 768px) {
+    @media #{$brk-narrow} {
       padding:  10px 50px 10px 50px;
     }
   }  
@@ -50,7 +50,7 @@ ul {
       margin: 10px;
   }  
   
-  @media screen and (min-width: 768px) {
+  @media #{$brk-narrow} {
     flex-direction: row;
   }
 }
@@ -58,7 +58,7 @@ ul {
 .name {
     align-self: center;
     
-    @media screen and (min-width: 1024px) {
+    @media #{$brk-wide}  {
       margin-right: auto;
     }
 }

@@ -1,5 +1,12 @@
 
+// Colors
+
 $hover-color: #36ACD0;
 $text-color: #4A4A4A;
 $text-color-about: #7F7F7F;
 $header--background-color: #EDEDED;
+
+// Media query breakpoints
+
+$brk-narrow :'(min-width: 768px)' ;
+$brk-wide 	: '(min-width: 1024px)';

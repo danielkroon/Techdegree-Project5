@@ -4,13 +4,13 @@
   flex-direction: column;
   margin: 0 auto;
   
-  @media screen and (min-width: 768px) {
-      flex-direction: row-reverse;
-      justify-content: center;
-      max-width: 768px;
-  }  
+  @media #{$brk-narrow} {
+    flex-direction: row-reverse;
+    justify-content: center;
+    max-width: 768px;
+  }
   
-  @media screen and (min-width: 1024px) {
+  @media #{$brk-wide} {
     justify-content: space-between;
     max-width: 1024px;
   }
@@ -20,11 +20,11 @@
   display: flex;
   justify-content: center;
   
-  @media screen and (min-width: 768px) {
-      justify-content: center;
+  @media #{$brk-narrow} {
+    justify-content: center;
   }  
   
-  @media screen and (min-width: 1024px) {
+  @media #{$brk-wide}  {
     justify-content: space-between;
   }
 }
@@ -41,7 +41,7 @@
     text-align: center;
     font-size: 21px;
     
-    @media screen and (min-width: 768px) {
+    @media #{$brk-narrow}  {
         text-align: left;
         align-self: center;
       }

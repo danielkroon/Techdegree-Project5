@@ -5,11 +5,11 @@
     margin: 0 auto;
     max-width: 530px;
     
-    @media screen and (min-width: 768px) {
+    @media #{$brk-narrow}  {
       max-width: 768px;
     }  
     
-    @media screen and (min-width: 1024px) {
+    @media #{$brk-wide}  {
       max-width: 1024px;
     }
   }

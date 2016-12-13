@@ -368,6 +368,30 @@ textarea {
   font: inherit;
   /* 2 */ }
 
+@font-face {
+  font-family: "sourcesanspro";
+  src: url("../fonts/sourcesanspro-regular-webfont-webfont.woff2") format("woff2"), url("../fonts/sourcesanspro-regular-webfont-webfont.woff") format("woff"); }
+html {
+  font-size: 1em;
+  font-family: "sourcesanspro", sans-serif; }
+
+body {
+  color: #4A4A4A;
+  font-weight: 400;
+  font-family: "sourcesanspro", sans-serif;
+  line-height: 1.45; }
+
+p {
+  margin-bottom: 1.3em; }
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2; }
+
 a {
   text-decoration: none;
   color: #4A4A4A; }
@@ -461,7 +485,8 @@ ul {
 
 .picture-wrapper {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  margin: 20px; }
   @media (min-width: 768px) {
     .picture-wrapper {
       justify-content: center; } }
@@ -470,15 +495,15 @@ ul {
       justify-content: space-between; } }
 
 .profile-image {
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
   border-radius: 4px;
-  margin: 30px; }
+  margin: 0px 10px 0px 10px; }
 
 .about-me {
   color: #7F7F7F;
   text-align: center;
-  font-size: 21px; }
+  font-size: 1.25rem; }
   @media (min-width: 768px) {
     .about-me {
       text-align: left;
@@ -538,11 +563,9 @@ section {
   align-self: center; }
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  color: #4A4A4A;
   background-color: white; }
 
 .l-wrapper {
   background-color: #EDEDED; }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=style.css.map */

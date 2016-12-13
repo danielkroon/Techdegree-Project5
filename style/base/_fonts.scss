@@ -1,0 +1,26 @@
+@include font-face('sourcesanspro', sourcesanspro-regular-webfont);
+
+html {
+    font-size: 1em;
+    font-family: $font-stack;
+}
+
+body {
+    color: $text-color;
+    font-weight: 400;
+    font-family: $font-stack;
+    line-height: 1.45;
+}
+
+p {
+    margin-bottom: 1.3em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 1.414em 0 0.5em;
+    font-weight: inherit;
+    line-height: 1.2;
+}

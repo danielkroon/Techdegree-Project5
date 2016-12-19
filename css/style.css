@@ -398,11 +398,6 @@ a {
   a:hover {
     color: #36ACD0; }
 
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none; }
-
 .main-header {
   max-width: 1024px;
   display: flex;
@@ -414,26 +409,6 @@ ul {
       flex-direction: row;
       justify-content: space-between;
       width: 100%; } }
-
-.main-nav {
-  display: flex;
-  flex-direction: column; }
-  .main-nav a {
-    display: block;
-    padding: 10px 100px 10px 100px;
-    background-color: white;
-    border-radius: 4px;
-    text-align: center; }
-    @media (min-width: 768px) {
-      .main-nav a {
-        padding: 10px 50px 10px 50px; } }
-  .main-nav li {
-    align-self: center;
-    width: 85%;
-    margin: 10px; }
-  @media (min-width: 768px) {
-    .main-nav {
-      flex-direction: row; } }
 
 .name {
   align-self: center; }
@@ -468,6 +443,61 @@ ul {
 
   #footer-5 {
     display: none; } }
+.nav-mobile {
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #7F7F7F url(../public/images/nav.svg) no-repeat center center;
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px; }
+  @media (min-width: 768px) {
+    .nav-mobile {
+      display: none; } }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.nav {
+  width: 100%; }
+
+.nav-list {
+  display: none;
+  flex-direction: column;
+  background-color: #7F7F7F;
+  border-radius: 4px; }
+  @media (min-width: 768px) {
+    .nav-list {
+      display: flex;
+      background-color: #EDEDED; } }
+  .nav-list a {
+    display: block;
+    padding: 10px 100px 10px 100px;
+    background-color: white;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    text-align: center; }
+    @media (min-width: 768px) {
+      .nav-list a {
+        padding: 10px 50px 10px 50px; } }
+  .nav-list li {
+    align-self: center;
+    width: 85%;
+    margin: 10px; }
+  @media (min-width: 768px) {
+    .nav-list {
+      flex-direction: row; } }
+
+.nav-active {
+  display: flex; }
+
 .about {
   max-width: 530px;
   display: flex;

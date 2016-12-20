@@ -1,0 +1,17 @@
+.nav-mobile {
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: $text-color-about url(../assets/img/nav.svg) no-repeat center center;
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+
+  @media #{$brk-narrow} {
+    display: none;
+  }
+}

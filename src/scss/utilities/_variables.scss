@@ -9,7 +9,7 @@ $nav-color                  : #34495E;
 // Media query breakpoints
 
 $brk-narrow                 :'(min-width: 768px)' ;
-$brk-wide 	                : '(min-width: 1024px)';
+$brk-wide 	                :'(min-width: 1024px)';
 
 // Fonts
 $font-stack                 : 'sourcesanspro', sans-serif;
@@ -28,5 +28,5 @@ $font-heading-line-height   : 1.25;
 
 // Assets paths
 
-$path-img                   :'../images';
+$path-img                   :'../img';
 $path-font                  :'../fonts';

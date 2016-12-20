@@ -1,0 +1,16 @@
+.portfolio_item	{
+    display: flex;
+    margin:	10px;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    
+    p {
+      text-align: center;
+      margin: 10px;
+    }
+}
+      
+.portfolio-images {
+    width: 100%;
+}

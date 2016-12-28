@@ -1,0 +1,28 @@
+.contact {
+  @extend %centered;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 530px;
+  
+  @media #{$brk-narrow}  {
+    max-width: 768px;
+  }  
+  
+  @media #{$brk-wide}  {
+    max-width: 1024px;
+  }
+}
+  
+.tel, .mail {
+  font-weight: 900;
+  padding-left: 15px;
+}
+  
+.seperator {
+  @extend %border-radius-4px;
+  border-top: 1px solid black;
+  width: 95%;
+  margin: 15px 0 5px 0;
+  align-self: center;
+}

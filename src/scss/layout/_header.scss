@@ -1,34 +1,25 @@
-a {
-  text-decoration: none;
-  color: $text-color;
+.main-header {
+  @extend %margin-auto;  
+  max-width: 1024px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-  &:hover {
-    color: $hover-color;
+  @media #{$brk-wide} {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
   }
 }
 
-.main-header {
-    max-width: 1024px;
-    display: flex;
-    margin: 0 auto;
-    flex-direction: column;
-    align-items: center;
-
-    @media #{$brk-wide} {
-      flex-direction: row;
-      justify-content: space-between;
-      width: 100%;
-    }
-}
-
 .name {
-    align-self: center;
+  align-self: center;
 
-    @media #{$brk-wide}  {
-      margin-right: auto;
-    }
+  @media #{$brk-wide}  {
+    margin-right: auto;
+  }
 }
 
 .l-wrapper {
-    background-color: $header-background-color;
+  background-color: $header-background-color;
 }

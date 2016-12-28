@@ -14,22 +14,22 @@ section {
     flex-flow: wrap;
     justify-content: center;
     align-items: baseline;
-    }
+  }
 }
 
 .portfolio_item	{
-    display: flex;
-    margin:	10px;
-    flex-direction: column;
-    align-items: center;
-    max-width: 300px;
-    
-    p {
-      text-align: center;
-      margin: 10px;
-    }
+  display: flex;
+  margin:	10px;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+  
+  p {
+    @extend %centered;
+    margin: 10px;
+  }
 }
       
 .portfolio-images {
-    width: 100%;
+  width: 100%;
 }

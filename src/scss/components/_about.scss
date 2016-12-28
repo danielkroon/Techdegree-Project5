@@ -1,3 +1,11 @@
+.name {
+  align-self: center;
+
+  @media #{$brk-wide}  {
+    margin-right: auto;
+  }
+}
+
 .about {
   max-width: 530px;
   display: flex;
@@ -17,11 +25,11 @@
 }
 
 .about-me {
-    @include text(1.25rem, $color: $text-color-about);
-    text-align: center;
+  @extend %centered;
+  @include text(1.25rem, $color: $text-color-about);
 
-    @media #{$brk-narrow}  {
-        text-align: left;
-        align-self: center;
-      }
+  @media #{$brk-narrow}  {
+    text-align: left;
+    align-self: center;
+  }
 }

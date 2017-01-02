@@ -5,11 +5,11 @@
   margin: 0 auto;
   max-width: 530px;
   
-  @media #{$brk-narrow}  {
+  @include tablet {
     max-width: 768px;
   }  
   
-  @media #{$brk-wide}  {
+  @include desktop {
     max-width: 1024px;
   }
 }
@@ -21,7 +21,7 @@
   
 .seperator {
   @extend %border-radius-4px;
-  border-top: 1px solid black;
+  border-top: 1px solid $color-black;
   width: 95%;
   margin: 15px 0 5px 0;
   align-self: center;

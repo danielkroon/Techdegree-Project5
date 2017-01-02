@@ -5,11 +5,12 @@ $color-tundra               : #4A4A4A;
 $color-gray         		: #7F7F7F;
 $color-gallery      		: #EDEDED;
 $color-white				: #FFFFFF;
+$color-black				: #000000;
 
 // Media query breakpoints
 
-$brk-narrow                 :'(min-width: 768px)' ;
-$brk-wide 	                :'(min-width: 1024px)';
+$tablet-width               : '(min-width: 768px)';
+$desktop-width 	            : '(min-width: 1024px)';
 
 // Fonts
 

@@ -16,3 +16,17 @@
   font-weight: $weight;
   color: $color;
 }
+
+// Media Queries
+
+@mixin tablet {
+  @media #{$tablet-width} {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media #{$desktop-width} {
+    @content;
+  }
+}

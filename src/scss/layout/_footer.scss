@@ -1,5 +1,5 @@
 .m-wrapper {
-  background-color: $header-background-color;
+  background-color: $color-gallery;
 }
 
 .nav-footer {
@@ -13,11 +13,11 @@
     padding: 20px;
   }
   
-  @media #{$brk-narrow} {
+  @include tablet {
     max-width: 768px;
   }  
   
-  @media #{$brk-wide} {
+  @include desktop {
     max-width: 1024px;
   }
 }
@@ -26,7 +26,7 @@
   display: none;
 }
   
-  @media #{$brk-narrow} {  
+  @include tablet {  
   #footer-1 {
     margin-right: auto;
   }

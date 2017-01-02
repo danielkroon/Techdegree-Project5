@@ -3,11 +3,11 @@
   justify-content: center;
   margin: 20px;
 
-  @media #{$brk-narrow} {
+  @include tablet {
     justify-content: center;
   }
 
-  @media #{$brk-wide}  {
+  @include desktop {
     justify-content: space-between;
   }
 }

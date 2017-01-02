@@ -1,7 +1,7 @@
 .name {
   align-self: center;
 
-  @media #{$brk-wide}  {
+  @include desktop {
     margin-right: auto;
   }
 }
@@ -12,13 +12,13 @@
   flex-direction: column;
   margin: 0 auto;
 
-  @media #{$brk-narrow} {
+  @include tablet {
     flex-direction: row-reverse;
     justify-content: center;
     max-width: 768px;
   }
 
-  @media #{$brk-wide} {
+  @include desktop {
     justify-content: space-between;
     max-width: 1024px;
   }
@@ -28,7 +28,7 @@
   @extend %centered;
   @include text(1.25rem, $color: $color-gray);
 
-  @media #{$brk-narrow}  {
+  @include tablet {
     text-align: left;
     align-self: center;
   }

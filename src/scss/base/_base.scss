@@ -1,12 +1,12 @@
 body {
-  background-color: white;
+  background-color: $white;
 }
 
 a {
   text-decoration: none;
-  color: $text-color;
+  color: $color-tundra;
 
   &:hover {
-    color: $hover-color;
+    color: $color-scooter;
   }
 }

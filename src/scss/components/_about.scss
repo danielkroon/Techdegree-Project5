@@ -26,7 +26,7 @@
 
 .about-me {
   @extend %centered;
-  @include text(1.25rem, $color: $text-color-about);
+  @include text(1.25rem, $color: $color-gray);
 
   @media #{$brk-narrow}  {
     text-align: left;

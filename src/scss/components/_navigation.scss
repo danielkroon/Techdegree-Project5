@@ -5,7 +5,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  background: $text-color-about url(../assets/img/nav.svg) no-repeat center center;
+  background: $color-gray url(../assets/img/nav.svg) no-repeat center center;
   height: 40px;
   width: 40px;
 
@@ -28,11 +28,11 @@ ul {
   @extend %border-radius-4px;
   display: none;
   flex-direction: column;
-  background-color: $text-color-about;
+  background-color: $color-gray;
 
   @media #{$brk-narrow} {
     display: flex;
-    background-color: #EDEDED;
+    background-color: $color-gallery;
   }
 
   a {
@@ -40,7 +40,7 @@ ul {
     @extend %border-radius-4px;
     display: block;
     padding:  10px 100px 10px 100px;
-    background-color: white;
+    background-color: $white;
 
     @media #{$brk-narrow} {
       padding:  10px 50px 10px 50px;
